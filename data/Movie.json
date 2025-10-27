@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "genres": ["Drama", "War", "Tragedy"],
+    "rating": 8.5,
+    "synopsis": "Two siblings struggle to survive in Japan during World War II after their home is destroyed and their parents are lost.",
+    "image": "image/Grave_of_the_Fireflies.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Grave_of_the_Fireflies"
+  },
+  {
+    "id": 2,
+    "title": "Spirited Away",
+    "year": 2001,
+    "genres": ["Fantasy", "Adventure", "Drama"],
+    "rating": 8.6,
+    "synopsis": "A young girl named Chihiro becomes trapped in a mysterious spirit world and must find a way to free herself and her parents.",
+    "image": "image/Spirited_Away.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Spirited_Away"
+  },
+  {
+    "id": 3,
+    "title": "Your Name",
+    "year": 2016,
+    "genres": ["Romance", "Fantasy", "Drama"],
+    "rating": 8.8,
+    "synopsis": "Two teenagers mysteriously swap bodies and form a profound connection while trying to meet each other in real life.",
+    "image": "image/Your_Name.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Your_Name"
+  },
+  {
+    "id": 4,
+    "title": "A Silent Voice",
+    "year": 2016,
+    "genres": ["Drama", "Romance", "Psychological"],
+    "rating": 8.2,
+    "synopsis": "A former bully seeks redemption by trying to reconnect with a deaf girl he tormented during his childhood.",
+    "image": "image/A_Silent_Voice.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/A_Silent_Voice_(film)"
+  },
+  {
+    "id": 5,
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "genres": ["Fantasy", "Adventure", "Action"],
+    "rating": 8.4,
+    "synopsis": "A young warrior becomes entangled in a battle between the gods of the forest and humans who consume its resources.",
+    "image": "image/Princess_Mononoke.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Princess_Mononoke"
+  },
+  {
+    "id": 6,
+    "title": "My Neighbor Totoro",
+    "year": 1988,
+    "genres": ["Family", "Fantasy", "Adventure"],
+    "rating": 8.2,
+    "synopsis": "Two young sisters move to the countryside and encounter friendly forest spirits, including the gentle Totoro.",
+    "image": "image/My_Neighbor_Totoro.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/My_Neighbor_Totoro"
+  },
+  {
+    "id": 7,
+    "title": "The Garden of Words",
+    "year": 2013,
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "rating": 7.5,
+    "synopsis": "A high school student and a mysterious woman form a bond during rainy mornings in a quiet Tokyo garden.",
+    "image": "image/The_Garden_of_Words.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/The_Garden_of_Words"
+  },
+  {
+    "id": 8,
+    "title": "Demon Slayer: Mugen Train",
+    "year": 2020,
+    "genres": ["Action", "Fantasy", "Adventure"],
+    "rating": 8.4,
+    "synopsis": "Tanjiro and his allies board the Mugen Train to assist the Flame Hashira in battling a powerful demon haunting the passengers.",
+    "image": "image/Mugen_Train.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_%E2%80%93_The_Movie:_Mugen_Train"
+  },
+  {
+    "id": 9,
+    "title": "The Wind Rises",
+    "year": 2013,
+    "genres": ["Drama", "Historical", "Biography"],
+    "rating": 7.8,
+    "synopsis": "A fictionalized biography of Jiro Horikoshi, the designer of Japanese fighter planes during World War II.",
+    "image": "image/The_Wind_Rises.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/The_Wind_Rises"
+  },
+  {
+    "id": 10,
+    "title": "Suzume",
+    "year": 2022,
+    "genres": ["Fantasy", "Adventure", "Drama"],
+    "rating": 8.0,
+    "synopsis": "A teenage girl embarks on a journey across Japan to close mysterious doors that bring natural disasters.",
+    "image": "image/Suzume.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Suzume"
+  },
+  {
+    "id": 11,
+    "title": "Akira",
+    "year": 1988,
+    "genres": ["Action", "Sci-Fi", "Cyberpunk"],
+    "rating": 8.0,
+    "synopsis": "In a dystopian Neo-Tokyo, a teenager gains psychic powers that threaten to destroy the city and humanity itself.",
+    "image": "image/Akira.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Akira_(1988_film)"
+  },
+  {
+    "id": 12,
+    "title": "Demon Slayer: Infinity Castle",
+    "year": 2025,
+    "genres": ["Action", "Fantasy", "Adventure"],
+    "rating": 9.0,
+    "synopsis": "Tanjiro and the Demon Slayer Corps enter Muzan Kibutsuji’s terrifying Infinity Castle for the final battle to end the demon threat once and for all.",
+    "image": "image/Demon_Slayer_Infinity_Castle.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_%E2%80%93_Infinity_Castle"
+  }
+]

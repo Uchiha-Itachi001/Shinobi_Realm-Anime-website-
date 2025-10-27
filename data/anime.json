@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Naruto",
+    "year": 2002,
+    "genres": ["Action", "Adventure", "Shounen"],
+    "rating": 8.3,
+    "synopsis": "Naruto Uzumaki, a young ninja, seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.",
+    "image": "image/Naruto.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Naruto"
+      },
+  {
+    "id": 2,
+    "title": "Attack on Titan",
+    "year": 2013,
+    "genres": ["Action", "Drama", "Fantasy"],
+    "rating": 9.0,
+    "synopsis": "Humanity lives within cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans.",
+    "image": "image/Atack_on_Titen.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Attack_on_Titan"
+      },
+  {
+    "id": 3,
+    "title": "Bleach",
+    "year": 2004,
+    "genres": ["Action", "Supernatural", "Shounen"],
+    "rating": 8.1,
+    "synopsis": "Ichigo Kurosaki obtains the powers of a Soul Reaper and must defend humans from evil spirits and guide departed souls to the afterlife.",
+    "image": "image/blich.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Bleach_(manga)"
+      },
+  {
+    "id": 4,
+    "title": "Demon Slayer",
+    "year": 2019,
+    "genres": ["Action", "Fantasy", "Shounen"],
+    "rating": 8.7,
+    "synopsis": "Tanjiro Kamado becomes a demon slayer after his family is slaughtered and his younger sister is turned into a demon.",
+    "image": "image/demon_Slayer.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
+      },
+  {
+    "id": 5,
+    "title": "Dragon Ball Z",
+    "year": 1989,
+    "genres": ["Action", "Adventure", "Martial Arts"],
+    "rating": 8.8,
+    "synopsis": "Goku and his friends defend Earth against powerful villains and constant threats to the universe.",
+    "image": "image/Dragonball Z.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Dragon_Ball_Z"
+      },
+  {
+    "id": 6,
+    "title": "Hunter x Hunter",
+    "year": 2011,
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rating": 9.1,
+    "synopsis": "Gon Freecss aspires to become a Hunter and embarks on a journey to find his father while making powerful friends.",
+    "image": "image/hunter X hunter.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter"
+      },
+  {
+    "id": 7,
+    "title": "Jujutsu Kaisen",
+    "year": 2020,
+    "genres": ["Action", "Supernatural", "Shounen"],
+    "rating": 8.6,
+    "synopsis": "Yuji Itadori joins a secret organization of Jujutsu Sorcerers to kill a powerful Curse named Ryomen Sukuna.",
+    "image": "image/jujutsu kaisen.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Jujutsu_Kaisen"
+      },
+  {
+    "id": 8,
+    "title": "One Piece",
+    "year": 1999,
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rating": 8.9,
+    "synopsis": "Monkey D. Luffy and his pirate crew explore the Grand Line in search of the world's ultimate treasure, the One Piece.",
+    "image": "image/One_pice.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/One_Piece"
+      },
+  {
+    "id": 9,
+    "title": "Frieren: Beyond Journey’s End",
+    "year": 2023,
+    "genres": ["Fantasy", "Drama", "Adventure"],
+    "rating": 9.2,
+    "synopsis": "After the hero’s party defeats the Demon King, the elven mage Frieren embarks on a journey to understand humanity and the meaning of life after her companions have long passed away.",
+    "image": "image/Frieren.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey%27s_End"
+      }
+]

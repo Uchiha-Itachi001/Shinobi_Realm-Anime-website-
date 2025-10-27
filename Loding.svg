@@ -1,0 +1,36 @@
+<svg width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pokeball_group {
+      animation: wiggle 1.25s ease-in-out infinite;
+      transform-origin: 50% 90%; /* Sets the pivot point near the bottom */
+    }
+    .flash {
+        animation: flash_anim 1.25s linear infinite;
+        animation-delay: 0.5s; /* Small delay before the flashing starts */
+    }
+
+    @keyframes wiggle {
+      0%   { transform: rotate(0deg); }
+      20%  { transform: rotate(-12deg); }
+      40%  { transform: rotate(10deg); }
+      60%  { transform: rotate(-8deg); }
+      80%  { transform: rotate(4deg); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes flash_anim {
+        /* The button light stays on for 90% of the animation, then quickly flashes */
+        0%, 90% { fill: #fdd835; } /* Yellowish "on" light */
+        95%, 100% { fill: #fff; } /* Flashes to white */
+    }
+  </style>
+
+  <g class="pokeball_group">
+    <path d="M 10 50 A 40 40 0 0 1 90 50 L 10 50" fill="#f44336" stroke="#212121" stroke-width="4"/>
+    
+    <path d="M 10 50 A 40 40 0 0 0 90 50 L 10 50" fill="#ffffff" stroke="#212121" stroke-width="4"/>
+    
+    <circle cx="50" cy="50" r="14" fill="#ffffff" stroke="#212121" stroke-width="4"></circle>
+    <circle class="flash" cx="50" cy="50" r="7" stroke="#212121" stroke-width="1.5"></circle>
+  </g>
+</svg>

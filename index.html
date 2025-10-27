@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShinobiRealm</title>
+    <link rel="icon" type="image/" href="./image/favicon.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <svg class="loader-pokeball" width="100px" height="100px" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="pokeball_group">
+                    <path d="M 10 50 A 40 40 0 0 1 90 50 L 10 50" fill="#f44336" stroke="#212121" stroke-width="4" />
+                    <path d="M 10 50 A 40 40 0 0 0 90 50 L 10 50" fill="#ffffff" stroke="#212121" stroke-width="4" />
+                    <circle cx="50" cy="50" r="14" fill="#ffffff" stroke="#212121" stroke-width="4"></circle>
+                    <circle class="flash" cx="50" cy="50" r="7" stroke="#212121" stroke-width="1.5"></circle>
+                </g>
+            </svg>
+            <p class="loader-text">Loading...</p>
+        </div>
+        <div class="progress-indicator">
+            <span class="progress-text">0%</span>
+        </div>
+    </div>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" role="navigation" aria-label="Sidebar Navigation">
+        <button class="sidebar-icon active" data-section="hero" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="sidebar-text">Home</span>
+        </button>
+        <button class="sidebar-icon" data-section="discover" aria-label="Discover" title="Discover">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <span class="sidebar-text">Discover</span>
+        </button>
+        <button class="sidebar-icon" data-section="calendar" aria-label="Calendar" title="Calendar">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span class="sidebar-text">Latest</span>
+        </button>
+        <div class="sidebar-divider"></div>
+        <button class="sidebar-icon" data-section="tvshows" aria-label="Movies" title="Movies">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                <polyline points="17 2 12 7 7 2"></polyline>
+            </svg>
+            <span class="sidebar-text">Movies</span>
+        </button>
+        <button class="sidebar-icon" data-section="bookmarks" aria-label="Bookmarks" title="Bookmarks">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="sidebar-text">Bookmarks</span>
+        </button>
+        <div class="sidebar-divider"></div>
+        <button class="sidebar-icon" data-section="about" aria-label="About" title="About">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span class="sidebar-text">About</span>
+        </button>
+        <button class="sidebar-icon" data-section="contact" aria-label="Contact" title="Contact">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+            <span class="sidebar-text">Contact</span>
+        </button>
+    </aside>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="brand">
+                <div class="logo" aria-hidden="true">
+                    <img src="./image/Icon.png" alt="">
+                </div>
+                <div class="site-title">
+                    <span class="name">ShinobiRealm</span>
+                </div>
+            </div>
+
+            <nav class="header-nav" role="navigation" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><button class="nav-btn active">Anime</button></li>
+                    <li><a href="movies.html" class="nav-btn">Movies</a></li>
+                    <li><a href="bookmarks.html" class="nav-btn">Bookmarks</a></li>
+                    <li><a href="about.html" class="nav-btn">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-area">
+                <form id="searchForm" class="search-form" role="search" aria-label="Search anime">
+                    <label for="searchInput" class="visually-hidden">Search anime</label>
+                    <input id="searchInput" name="q" type="search" placeholder="Search anime, e.g. Naruto"
+                        autocomplete="off">
+                    <button type="submit" class="search-btn" aria-label="Search">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="header-icons">
+                <button class="header-icon-btn" aria-label="Notifications">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+                <button class="header-icon-btn user-avatar" aria-label="User Profile">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="site-main">
+        <!-- Full-screen Hero Slider -->
+        <section class="hero-slider" id="heroSlider">
+            <div class="slider-container">
+                <!-- Slides will be dynamically created by JS -->
+            </div>
+
+            <!--@ Slider Controls -->
+            <button class="slider-nav slider-prev" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="slider-nav slider-next" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <!--$ Slide Indicators -->
+            <div class="slider-indicators"></div>
+        </section>
+
+        <!--! Best New Anime Section -->
+        <section class="featured-section" id="featuredSection">
+            <div class="featured-container">
+                <div class="section-header">
+                    <div class="section-header-content">
+                        <h2 class="section-title">BEST <span class="year-highlight">ANIME</span> </h2>
+                        <p class="section-subtitle">Discover the most popular and trending anime series this year</p>
+                    </div>
+                    <button class="view-all-btn" onclick="alert('View All coming soon!')">
+                        View All
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="featured-slider">
+                    <button class="featured-nav featured-prev" aria-label="Previous">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="featured-grid" id="featuredGrid">
+                        <!-- Will be populated by JS -->
+                    </div>
+                    <button class="featured-nav featured-next" aria-label="Next">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+        <!-- Latest Anime Section -->
+        <section class="latest-section" id="latestSection">
+            <div class="latest-container">
+                <div class="section-header">
+                    <div class="section-header-content">
+                        <h2 class="section-title">LATEST ANIME ON <span class="site-highlight">Shinobi_Realm</span></h2>
+                        <p class="section-subtitle">Recently added anime series and movies to our collection</p>
+                    </div>
+                    <button class="view-all-btn" onclick="alert('View All Latest coming soon!')">
+                        View All
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="latest-grid" id="latestGrid">
+                    <!-- Will be populated by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <div class="section-divider"></div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                        <img src="./image/Icon.png" alt="ShinobiRealm Logo">
+                        <span class="footer-title">ShinobiRealm</span>
+                    </div>
+                    <p class="footer-description">Your ultimate destination for discovering and watching the best anime
+                        series and movies. Stream thousands of titles in high quality.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/19voPLTj8J/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/rpankoj32?igsh=cHp5Ymx5MGNkdjFz&utm_source=ig_contact_invite"
+                            target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Browse</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Trending Now</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Genres</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Fan Art</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-newsletter-text">Subscribe to get updates on new releases and exclusive content.
+                    </p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 ShinobiRealm. All rights reserved. Made with ❤️ for anime fans.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Use</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
