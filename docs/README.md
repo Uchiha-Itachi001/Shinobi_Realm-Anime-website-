@@ -1,4 +1,5 @@
-# 📚 ShinobiRealm - Documentation Index
+# 📚 ShinobiRealm - Documentation index       
+Author: Pankoj Roy
 
 Welcome to the complete documentation for the **ShinobiRealm** anime website project. This documentation provides detailed explanations of all features, code implementations, and design patterns used throughout the website.
 
