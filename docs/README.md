@@ -1,17 +1,8 @@
-# 📚 ShinobiRealm - Documentation index       
- <div style="display:flex;gap:30px;align-items:center;">
-  <img src="../image/profile.jpg" alt="Pankoj Roy" 
-       style="border-radius:50%;width:150px;height:150px;border:2px solid #8e7bff;box-shadow:0 4px 8px rgba(0,0,0,0.1);object-fit:cover;">
-  <div>
-    <h1>Author: Pankoj Roy</h1>
-    <p>
-      Welcome to the complete documentation for the 
-      <strong style="color:#8e7bff;">ShinobiRealm</strong> anime website project.
-      This documentation provides detailed explanations of all features, code implementations, 
-      and design patterns used throughout the website.
-    </p>
-  </div>
-</div>
+# 📚 ShinobiRealm — Documentation Index
+**Author:** Pankoj Roy
+
+Welcome to the complete documentation for **ShinobiRealm**, an anime website project.  
+This documentation provides detailed explanations of all features, code implementations, and design patterns used throughout the website.
 
 ---
 
