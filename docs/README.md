@@ -1,7 +1,79 @@
 # 📚 ShinobiRealm - Documentation index       
-Author: Pankoj Roy
+  <style>
+            img {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                border: 2px solid #ff0202ff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                object-fit: cover;
+                transition: all 0.3s ease;
 
-Welcome to the complete documentation for the **ShinobiRealm** anime website project. This documentation provides detailed explanations of all features, code implementations, and design patterns used throughout the website.
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                animation: border 5s linear infinite;
+
+            }
+
+            @keyframes border {
+                0% {
+                    border-color: #8e7bff;
+                }
+
+                25% {
+                    border-color: #7be2ffff;
+                }
+
+                50% {
+                    border-color: #ff7b72;
+                }
+
+                75% {
+                    border-color: #ffe07bff;
+                }
+
+                100% {
+                    border-color: #8e7bff;
+                }
+
+            }
+
+            .container {
+                display: flex;
+                gap: 30px
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .strong {
+                color: #8e7bff;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .Details {
+                    text-align: center;
+                }
+            }
+        </style>
+<div class="container">
+    <img src="../image/profile.jpg" alt="Pankoj Roy">
+    <div class="Details">
+        <h1>Author: Pankoj Roy</h1>
+        <p>
+         Welcome to the complete documentation for the <strong class=" strong">ShinobiRealm</strong> anime website project. This documentation provides detailed explanations of all features, code implementations, and design patterns used throughout the website.
+        </p>
+    </div>
+</div>
 
 ---
 

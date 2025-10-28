@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **about.html** page showcases the team behind ShinobiRealm, provides information about the website, and includes a contact section. It features animated team member cards with hover effects and social media integration.
+The **about.html** page showcases the developer behind ShinobiRealm, highlighting their skills, experience, and contact information. It features an animated profile card with hover effects, social media integration, and a contact form. The page uses a modern design with gradients, animations, and responsive layouts.
 
 ---
 
@@ -35,167 +35,72 @@ window.addEventListener("load", () => {
 
 ---
 
-### 2. **Hero Section**
+### 2. **Profile Hero Section**
 
-- **Description**: Large banner introducing the ShinobiRealm platform
+- **Description**: Hero section introducing the developer with avatar, name, role, and social links
 - **HTML Structure**:
 
 ```html
-<section class="about-hero">
-  <div class="about-hero-content">
-    <h1 class="about-hero-title">About ShinobiRealm</h1>
-    <p class="about-hero-subtitle">
-      Your ultimate destination for anime streaming and discovery
-    </p>
-    <div class="about-hero-stats">
-      <div class="stat-item">
-        <div class="stat-number">1000+</div>
-        <div class="stat-label">Anime Titles</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">500+</div>
-        <div class="stat-label">Movies</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">Streaming</div>
-      </div>
+<section class="profile-hero">
+  <div class="profile-container">
+    <div class="team-heading">
+      <h2 class="team-title">About Me</h2>
+      <p class="team-subtitle">The faces behind the ideas and hard work.</p>
     </div>
-  </div>
-</section>
-```
-
----
-
-### 3. **Team Section**
-
-- **Description**: Grid of team member cards with photos and social links
-- **HTML Structure**:
-
-```html
-<section class="team-section">
-  <div class="section-header">
-    <h2 class="section-title">Meet Our Team</h2>
-    <p class="section-subtitle">The passionate people behind ShinobiRealm</p>
-  </div>
-  
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-card-image">
-        <img src="image/team/member1.jpg" alt="Team Member">
-        <div class="team-card-overlay">
-          <div class="social-links">
-            <a href="#" class="social-link">
-              <svg><!-- Twitter Icon --></svg>
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <img src="./image/profile.jpg" alt="Pankoj Roy" class="avatar-img">
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name">Pankoj Roy</h1>
+          <p class="profile-role">Full Stack Developer • Flutter Expert • AI Enthusiast</p>
+          <div class="profile-socials">
+            <a href="Facebook Link" target="_blank" class="social-icon facebook" aria-label="Facebook">
+              <svg><!-- facebook Icon --></svg>
             </a>
-            <a href="#" class="social-link">
-              <svg><!-- GitHub Icon --></svg>
+            <a href="Instagram Link" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <svg><!--InstaGram Icon --></svg>
             </a>
-            <a href="#" class="social-link">
-              <svg><!-- LinkedIn Icon --></svg>
+            <a href="Github Link" target="_blank" class="social-icon git-hub" aria-label="GitHub">
+              <svg><!--Github Icon --></svg>
             </a>
           </div>
         </div>
       </div>
-      <div class="team-card-content">
-        <h3 class="team-card-name">John Doe</h3>
-        <p class="team-card-role">Founder & CEO</p>
-        <p class="team-card-bio">
-          Passionate about anime and technology, bringing fans together.
-        </p>
+      <div class="profile-bio">
+        <p>Passionate developer who transforms ideas into reality through clean, efficient code. Specializing in full-stack web development and cross-platform mobile applications.</p>
       </div>
-    </div>
-    <!-- More team cards... -->
-  </div>
-</section>
-```
-
----
-
-### 4. **Team Card Hover Effects**
-
-- **Description**: Smooth animations revealing social links on hover
-- **CSS Implementation**:
-
-```css
-.team-card {
-  background: var(--panel);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.team-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(142, 123, 255, 0.2);
-  border-color: rgba(142, 123, 255, 0.3);
-}
-
-.team-card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(14, 23, 38, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.team-card:hover .team-card-overlay {
-  opacity: 1;
-}
-
-.social-links {
-  display: flex;
-  gap: 15px;
-  transform: translateY(20px);
-  transition: transform 0.4s ease 0.1s;
-}
-
-.team-card:hover .social-links {
-  transform: translateY(0);
-}
-```
-
----
-
-### 5. **Mission Statement Section**
-
-- **Description**: Information about the website's purpose
-- **HTML**:
-
-```html
-<section class="mission-section">
-  <div class="mission-container">
-    <div class="mission-content">
-      <h2 class="mission-title">Our Mission</h2>
-      <p class="mission-text">
-        At ShinobiRealm, we're dedicated to providing anime fans with the 
-        best streaming experience. Our platform offers a vast collection of 
-        anime series and movies, all in high quality with subtitles.
-      </p>
-      <div class="mission-features">
-        <div class="feature-item">
-          <svg><!-- Check Icon --></svg>
-          <span>High-quality streaming</span>
+      <div class="profile-stats">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <div class="stat-value" data-target="2">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
         </div>
-        <div class="feature-item">
-          <svg><!-- Check Icon --></svg>
-          <span>Regular updates</span>
-        </div>
-        <div class="feature-item">
-          <svg><!-- Check Icon --></svg>
-          <span>User-friendly interface</span>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <div class="stat-value" data-target="20">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mission-image">
-      <img src="image/mission.jpg" alt="Our Mission">
     </div>
   </div>
 </section>
@@ -203,53 +108,116 @@ window.addEventListener("load", () => {
 
 ---
 
-### 6. **Contact Section**
+### 3. **Skills Showcase Section**
 
-- **Description**: Contact form with smooth scroll navigation
+- **Description**: Grid of skill cards highlighting expertise areas
 - **HTML Structure**:
 
 ```html
-<section class="contact-section" id="contact">
-  <div class="contact-container">
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="section-subtitle">Have questions? We'd love to hear from you</p>
-    
-    <form class="contact-form">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your name" required>
+<section class="skills-showcase">
+  <div class="profile-container">
+    <h2 class="section-heading">Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="your@email.com" required>
+        <h3>Full Stack Development</h3>
+        <p>Building end-to-end web applications with modern frameworks and best practices</p>
+        <div class="tech-tags">
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
         </div>
       </div>
-      
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" placeholder="What's this about?" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" rows="6" placeholder="Your message..." required></textarea>
-      </div>
-      
-      <button type="submit" class="submit-btn">
-        Send Message
-        <svg><!-- Send Icon --></svg>
-      </button>
-    </form>
+      <!-- More skill cards... -->
+    </div>
   </div>
 </section>
 ```
 
 ---
 
-### 7. **Sidebar Navigation**
+### 4. **Contact Section**
 
-- **Description**: Smooth scroll to contact section from sidebar
+- **Description**: Contact form with validation and info cards
+- **HTML Structure**:
+
+```html
+<section class="contact-section">
+  <div class="profile-container">
+    <h2 class="section-heading">Get In Touch</h2>
+    <p class="contact-subtitle">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+
+    <div class="contact-wrapper">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span>Send Message</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p>rpankoj32@gmail.com , hroy82826@gmail.com</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Location</h3>
+          <p>Available Worldwide</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+---
+
+### 5. **Sidebar Navigation**
+
+- **Description**: Navigation sidebar with smooth scroll and page redirects
 - **Implementation**:
 
 ```javascript
@@ -284,151 +252,68 @@ function initSidebarNavigation() {
 
 ---
 
-### 8. **Form Validation**
+### 6. **Animated Statistics**
 
-- **Description**: HTML5 validation with custom styling
-- **CSS**:
-
-```css
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: rgb(142, 123, 255);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(142, 123, 255, 0.1);
-}
-
-.form-group input:invalid:not(:placeholder-shown),
-.form-group textarea:invalid:not(:placeholder-shown) {
-  border-color: rgba(255, 107, 107, 0.5);
-}
-
-.form-group input:valid:not(:placeholder-shown),
-.form-group textarea:valid:not(:placeholder-shown) {
-  border-color: rgba(76, 175, 80, 0.5);
-}
-```
-
----
-
-### 9. **Submit Button Animation**
-
-- **Description**: Animated send button with icon
-- **CSS**:
-
-```css
-.submit-btn {
-  background: linear-gradient(135deg, rgb(142, 123, 255), rgb(117, 103, 210));
-  color: #fff;
-  border: none;
-  padding: 16px 40px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(142, 123, 255, 0.3);
-}
-
-.submit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(142, 123, 255, 0.5);
-}
-
-.submit-btn svg {
-  transition: transform 0.3s ease;
-}
-
-.submit-btn:hover svg {
-  transform: translateX(5px);
-}
-```
-
----
-
-### 10. **Responsive Grid Layout**
-
-- **Description**: Team cards adapt to screen size
-- **CSS**:
-
-```css
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 40px 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 30px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-```
-
----
-
-### 11. **Hamburger Menu Integration**
-
-- **Description**: Mobile menu functionality
+- **Description**: Counter animation for experience and projects
 - **Implementation**:
 
 ```javascript
-function initHamburgerMenu() {
-  const hamburger = document.querySelector(".hamburger-menu");
-  const sidebar = document.querySelector(".sidebar");
-  const overlay = document.querySelector(".mobile-overlay");
-  const sidebarIcons = document.querySelectorAll(".sidebar-icon");
+function animateStats() {
+  const statValues = document.querySelectorAll('.stat-value');
 
-  if (!hamburger || !sidebar || !overlay) return;
+  statValues.forEach(stat => {
+    const target = parseInt(stat.getAttribute('data-target'));
+    const increment = target / 100;
+    let current = 0;
 
-  hamburger.addEventListener("click", () => {
-    const isActive = hamburger.classList.toggle("active");
-    sidebar.classList.toggle("active", isActive);
-    overlay.classList.toggle("active", isActive);
-    document.body.style.overflow = isActive ? "hidden" : "";
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        stat.textContent = target;
+        clearInterval(timer);
+      } else {
+        stat.textContent = Math.floor(current);
+      }
+    }, 30);
   });
+}
+```
 
-  overlay.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    sidebar.classList.remove("active");
-    overlay.classList.remove("active");
-    document.body.style.overflow = "";
-  });
+---
 
-  sidebarIcons.forEach((icon) => {
-    icon.addEventListener("click", () => {
-      hamburger.classList.remove("active");
-      sidebar.classList.remove("active");
-      overlay.classList.remove("active");
-      document.body.style.overflow = "";
-    });
+### 7. **Form Validation and Submission**
+
+- **Description**: HTML5 validation with custom JavaScript handling
+- **Implementation**:
+
+```javascript
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Basic validation
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
+
+    // Submit form (you can integrate with a backend service here)
+    alert('Thank you for your message! I will get back to you soon.');
+    form.reset();
   });
 }
 ```
@@ -439,36 +324,32 @@ function initHamburgerMenu() {
 
 ```
 about.html          - About page HTML
-About.js            - About page JavaScript
-styles.css          - Global styles
-image/team/         - Team member photos
+About.js            - About page JavaScript (sidebar nav, form handling, animations)
+styles.css          - Global styles including about-page-new, profile-hero, etc.
+image/profile.jpg   - Profile image
 ```
 
 ---
 
 ## Key Sections
 
-1. **Hero Section**: Introduction and statistics
-2. **Mission Section**: Purpose and features
-3. **Team Section**: Team member cards with social links
-4. **Contact Section**: Contact form
+1. **Profile Hero**: Developer introduction with avatar and stats
+2. **Skills Showcase**: Expertise areas with tech tags
+3. **Contact Section**: Contact form and info cards
 
 ---
 
 ## Social Media Integration
 
 ```html
-<div class="social-links">
-  <a href="https://www.facebook.com/..." class="social-link" aria-label="Facebook">
+<div class="profile-socials">
+  <a href="https://www.facebook.com/share/19voPLTj8J/" target="_blank" class="social-icon facebook" aria-label="Facebook">
     <svg><!-- Facebook Icon --></svg>
   </a>
-  <a href="https://www.instagram.com/..." class="social-link" aria-label="Instagram">
+  <a href="https://www.instagram.com/rpankoj32?igsh=cHp5Ymx5MGNkdjFz&utm_source=ig_contact_invite" target="_blank" class="social-icon instagram" aria-label="Instagram">
     <svg><!-- Instagram Icon --></svg>
   </a>
-  <a href="https://twitter.com/..." class="social-link" aria-label="Twitter">
-    <svg><!-- Twitter Icon --></svg>
-  </a>
-  <a href="https://github.com/..." class="social-link" aria-label="GitHub">
+  <a href="https://github.com/Uchiha-Itachi001" target="_blank" class="social-icon git-hub" aria-label="GitHub">
     <svg><!-- GitHub Icon --></svg>
   </a>
 </div>
@@ -489,8 +370,8 @@ image/team/         - Team member photos
 ## Animation Timeline
 
 1. **Page Load**: 0-2s - Loading screen with progress
-2. **Hero Entrance**: 2s - Fade in hero content
-3. **Section Reveal**: On scroll - Fade in as sections come into view
+2. **Hero Entrance**: 2s - Fade in profile content
+3. **Stats Animation**: On scroll - Counter animations
 4. **Card Hover**: Instant - Smooth transform and shadow
 5. **Form Focus**: Instant - Border color and glow effect
 
