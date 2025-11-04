@@ -114,7 +114,7 @@ function renderBookmarks() {
         </svg>
         <h2 style="color: #fff; font-size: 1.8rem; margin-bottom: 12px;">No Bookmarks Yet</h2>
         <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; margin-bottom: 30px;">Start adding your favorite anime and movies to your collection!</p>
-        <a href="index.html" style="display: inline-flex; align-items: center; gap: 8px; background: rgb(117, 103, 210); color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s;">
+        <a href="index.html" style="display: inline-flex; align-items: center;  gap: 8px; background: rgb(117, 103, 210); color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; transition: all 0.3s;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
           </svg>
@@ -183,12 +183,14 @@ function renderBookmarks() {
             .join("")}
         </div>
         <div class="movie-card-actions">
+        <a href="${item.trailer}" target="_blank" >
           <button class="movie-watch-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z"/>
             </svg>
             Watch Now
           </button>
+          </a>
           <button class="remove-bookmark-btn" title="Remove from bookmarks" data-id="${
             item.id
           }" data-type="${item.type}">

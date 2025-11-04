@@ -7,8 +7,9 @@
     "rating": 8.3,
     "synopsis": "Naruto Uzumaki, a young ninja, seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.",
     "image": "image/Naruto.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Naruto"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Naruto",
+    "trailer": "https://www.youtube.com/watch?v=yeUpnIKt6k4"
+  },
   {
     "id": 2,
     "title": "Attack on Titan",
@@ -17,8 +18,9 @@
     "rating": 9.0,
     "synopsis": "Humanity lives within cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans.",
     "image": "image/Atack_on_Titen.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Attack_on_Titan"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Attack_on_Titan",
+    "trailer": "https://www.youtube.com/watch?v=MGRm4IzK1SQ"
+  },
   {
     "id": 3,
     "title": "Bleach",
@@ -27,8 +29,9 @@
     "rating": 8.1,
     "synopsis": "Ichigo Kurosaki obtains the powers of a Soul Reaper and must defend humans from evil spirits and guide departed souls to the afterlife.",
     "image": "image/blich.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Bleach_(manga)"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Bleach_(manga)",
+    "trailer": "https://www.youtube.com/watch?v=1sygUhb8Q2Y"
+  },
   {
     "id": 4,
     "title": "Demon Slayer",
@@ -37,8 +40,9 @@
     "rating": 8.7,
     "synopsis": "Tanjiro Kamado becomes a demon slayer after his family is slaughtered and his younger sister is turned into a demon.",
     "image": "image/demon_Slayer.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba",
+    "trailer": "https://www.youtube.com/watch?v=VQGCKyvzIM4"
+  },
   {
     "id": 5,
     "title": "Dragon Ball Z",
@@ -47,8 +51,9 @@
     "rating": 8.8,
     "synopsis": "Goku and his friends defend Earth against powerful villains and constant threats to the universe.",
     "image": "image/Dragonball Z.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Dragon_Ball_Z"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Dragon_Ball_Z",
+    "trailer": "https://www.youtube.com/watch?v=sxufB6DxXk0"
+  },
   {
     "id": 6,
     "title": "Hunter x Hunter",
@@ -57,8 +62,9 @@
     "rating": 9.1,
     "synopsis": "Gon Freecss aspires to become a Hunter and embarks on a journey to find his father while making powerful friends.",
     "image": "image/hunter X hunter.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter",
+    "trailer": "https://www.youtube.com/watch?v=d6kBeJjTGnY"
+  },
   {
     "id": 7,
     "title": "Jujutsu Kaisen",
@@ -67,8 +73,9 @@
     "rating": 8.6,
     "synopsis": "Yuji Itadori joins a secret organization of Jujutsu Sorcerers to kill a powerful Curse named Ryomen Sukuna.",
     "image": "image/jujutsu kaisen.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Jujutsu_Kaisen"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/Jujutsu_Kaisen",
+    "trailer": "https://www.youtube.com/watch?v=pkKu9hLT-t8"
+  },
   {
     "id": 8,
     "title": "One Piece",
@@ -77,8 +84,9 @@
     "rating": 8.9,
     "synopsis": "Monkey D. Luffy and his pirate crew explore the Grand Line in search of the world's ultimate treasure, the One Piece.",
     "image": "image/One_pice.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/One_Piece"
-      },
+    "wiki": "https://en.wikipedia.org/wiki/One_Piece",
+    "trailer": "https://www.youtube.com/watch?v=1KMcoJBMWE4"
+  },
   {
     "id": 9,
     "title": "Frieren: Beyond Journey’s End",
@@ -87,6 +95,7 @@
     "rating": 9.2,
     "synopsis": "After the hero’s party defeats the Demon King, the elven mage Frieren embarks on a journey to understand humanity and the meaning of life after her companions have long passed away.",
     "image": "image/Frieren.jpg",
-    "wiki": "https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey%27s_End"
-      }
+    "wiki": "https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey%27s_End",
+    "trailer": "https://www.youtube.com/watch?v=Iwr1aLEDpe4"
+  }
 ]

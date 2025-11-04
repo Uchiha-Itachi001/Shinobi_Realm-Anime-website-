@@ -1843,8 +1843,11 @@ body.page-transitioning {
     text-align: center;
     margin-bottom: 80px;
     padding: 0 20px;
+    
 }
-
+a{
+    text-decoration:none;
+}
 .team-title {
     font-size: 3.5rem;
     font-weight: 800;

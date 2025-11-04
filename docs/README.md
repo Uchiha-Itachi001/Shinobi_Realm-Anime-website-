@@ -1,6 +1,15 @@
 # 📚 ShinobiRealm — Documentation Index
 **Author:** Pankoj Roy
 
+## 🛠️ Tech Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=google-fonts&logoColor=white)
+![LocalStorage](https://img.shields.io/badge/LocalStorage-FF6B35?style=for-the-badge&logo=web&logoColor=white)
+
 Welcome to the complete documentation for **ShinobiRealm**, an anime website project.  
 This documentation provides detailed explanations of all features, code implementations, and design patterns used throughout the website.
 
